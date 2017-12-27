@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="Project1.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server"/>
+    <script src="scripts/jquery-1.9.1.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <nav class="navbar navbar-default navbar-inverse"> 
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <span class="navbar-brand mb-0">Family Hardware</span>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="Default.aspx">Home</a></li>
+                <li><a href="About.aspx">About</a></li>
+                <li><a href="Contact.aspx">Contact</a></li>
+                <li><a href="Products.aspx">Products</a></li>
+                <li><a href="ShoppingCart.aspx">Shopping Cart</a></li>
+                <li><a href="CustomerRegistration.aspx">Customer Registration</a></li>
+                <li><a href="AdminPage.aspx">Admin</a></li>
+            </ul>
+          </div>
+        </nav>
+        <asp:ContentPlaceHolder ID="body" runat="server"/>
+    </div>
+    </form>
+</body>
+</html>
